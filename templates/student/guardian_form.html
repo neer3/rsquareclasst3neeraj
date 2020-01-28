@@ -26,7 +26,7 @@ Dashboard | RsquareClass
 </script>
 
 <!-- Start content -->
-<div class="content modal fade"  id="myModal">
+<div class="content">
     <div class="container-fluid">        
         <div class="row">
             <div class="col-sm-12">
@@ -72,22 +72,22 @@ Dashboard | RsquareClass
                                     <li class="step">Batch Details</li>
                                 </ul>
                             </div>
-                            <div class="mt-2">
+                            <div class="mt-2 modal fade" id="myModal">
                                 <form action="" method="POST" id="guardian-basic">
                                     {% csrf_token %}
-                                    <div class="form-section">
-                                        <div class="mb-0">
+                                    <div class="form-section" style="color: white;">
+                                        <div class="mb-0" style="margin-top: 20%; padding: 40px; background: #383837;" style="color: white;">
                                             <div class="form-group row">
                                                 <label for="guardian-relation" class="col-sm-2 col-form-label">Relation</label>
-                                                <div class="col-sm-3 mt-2">
+                                                <div class="col-sm-3 mt-2" style="color: white;">
                                                     <input class="" type="radio" name="relation" id="guardian-relation-father" checked value="FAT">
                                                     <label class="form-check-label" for="guardian-relation-father">Father</label>
                                                 </div>
-                                                <div class="col-sm-3 mt-2">
+                                                <div class="col-sm-3 mt-2" style="color: white;">
                                                     <input class="" type="radio" name="relation" id="guardian-relation-mother" value="MOT">
                                                     <label class="form-check-label" for="guardian-relation-mother">Mother</label>
                                                 </div>
-                                                <div class="col-sm-3 mt-2">
+                                                <div class="col-sm-3 mt-2" style="color: white;">
                                                     <input class="" type="radio" name="relation" id="guardian-relation-other" value="OTH">
                                                     <label class="form-check-label" for="guardian-relation-other">Other</label>
                                                 </div>
